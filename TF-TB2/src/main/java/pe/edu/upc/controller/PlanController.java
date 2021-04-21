@@ -47,8 +47,8 @@ private static final long serialVersionUID = 1L;
 		this.init();
 	}
 	
-	public void eliminar(Plan cliente) {
-		mService.eliminar(cliente.getIdPlan());
+	public void eliminar(Plan plan) {
+		mService.eliminar(plan.getIdPlan());
 		this.listar();
 	}
 
@@ -56,8 +56,8 @@ private static final long serialVersionUID = 1L;
 		return plan;
 	}
 
-	public void setPlan(Plan cliente) {
-		this.plan = cliente;
+	public void setPlan(Plan plan) {
+		this.plan = plan;
 	}
 
 	public List<Plan> getListaPlanes() {
